@@ -11,12 +11,12 @@ Usage
 
 .. code-block:: bash
 
-    $ git clone https://github.com/tzutalin/labelImg
+    $ git clone https://github.com/tzutalin/task-scheduler.git
     $ cd task-scheduler
     $ python task-scheduler.py -f tasks.yml
 
 
-This is a tasks.yml example file::
+The format of tasks.yml is as below::
 
   task:
      <First task name>
@@ -31,7 +31,7 @@ This is a tasks.yml example file::
          <jobname>:
            - <shell command>
 
-In the example below, we have two jobs, a `prepare` job is used to install the additional package::
+In the example below, we have two jobs in tasks.yml, a `prepare` job is used to install the additional package and print some messages::
 
   task:
      schedule_task1:
@@ -52,4 +52,5 @@ In the example below, we have two jobs, a `prepare` job is used to install the a
        jobs:
          test1:
            - echo 'Hello world'
+
 
