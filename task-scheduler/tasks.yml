@@ -1,0 +1,19 @@
+task:
+  schedule_task1:
+    schedule_time_unit: seconds
+    schedule_time_every: 2
+
+    jobs:
+      test1:
+        - echo 'hi'
+
+  schedule_task2:
+     schedule_time_unit: minutes
+     schedule_time_every: 2
+
+     prepare:
+       - pip install pyyaml
+
+     jobs:
+       test1:
+         - echo 'hi'

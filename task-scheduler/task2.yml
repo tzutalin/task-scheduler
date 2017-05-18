@@ -1,0 +1,8 @@
+task:
+  schedule_task2:
+     schedule_time_unit: minutes
+     schedule_time_every: 1
+
+     jobs:
+       run_opengrok:
+         - sh ../demoscripts/opengrok.sh
