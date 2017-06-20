@@ -12,7 +12,9 @@ Usage
 .. code-block:: bash
 
     $ pip intall taskscheduler
-    $ taskscheduler -f tasks.yml
+    $ py-task-scheduler -f  [*.yml]simpleTask.yml
+    Ex:
+    $ py-task-scheduler -f simpleTask.yml
 
 
 The format of tasks.yml is as below::

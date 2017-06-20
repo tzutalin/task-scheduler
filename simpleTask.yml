@@ -1,0 +1,8 @@
+task:
+  schedule_simpletask:
+     schedule_time_unit: minutes
+     schedule_time_every: 1
+
+     jobs:
+       run_echo:
+         - echo 'hello world'

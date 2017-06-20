@@ -18,9 +18,9 @@ test_requirements = [
 
 setup(
     name='py-task-scheduler',
-    version='0.0.2',
+    version='0.0.3',
     description="A tool to help you schedule your task according to your config file",
-    long_description=readme + '\n\n' + history,
+    long_description=readme + '\n\n' + "Usage: py-task-scheduler -f task.yaml",
     author="TzuTa Lin",
     author_email='tzu.ta.lin@gmail.com',
     url='https://github.com/tzutalin/task-scheduler',
