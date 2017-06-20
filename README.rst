@@ -11,9 +11,8 @@ Usage
 
 .. code-block:: bash
 
-    $ git clone https://github.com/tzutalin/task-scheduler.git
-    $ cd task-scheduler
-    $ python task-scheduler.py -f tasks.yml
+    $ pip intall taskscheduler
+    $ taskscheduler -f tasks.yml
 
 
 The format of tasks.yml is as below::

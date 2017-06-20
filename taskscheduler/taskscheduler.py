@@ -70,7 +70,7 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1] in allow_ext
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description='task-scheduler will arrage the task according the YAML config')
     parser.add_argument('-f', '--file', type=str, help='YAML config file')
     args = parser.parse_args()
@@ -100,3 +100,6 @@ if __name__ == "__main__":
     while True:
         schedule.run_pending()
         time.sleep(1)
+
+if __name__ == "__main__":
+    main()

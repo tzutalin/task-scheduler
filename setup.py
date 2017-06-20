@@ -10,7 +10,8 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    # TODO: put package requirements here
+    'schedule',
+    'pyyaml'
 ]
 
 test_requirements = [
@@ -19,7 +20,7 @@ test_requirements = [
 ]
 
 setup(
-    name='task-scheduler',
+    name='py-task-scheduler',
     version='0.0.1',
     description="A tool to help you schedule your task according to your config file",
     long_description=readme + '\n\n' + history,
@@ -27,19 +28,19 @@ setup(
     author_email='tzu.ta.lin@gmail.com',
     url='https://github.com/tzutalin/task-scheduler',
     packages=[
-        'task-scheduler'
+        'taskscheduler'
     ],
-    package_dir={'task-scheduler': 'task-scheduler'},
+    package_dir={'taskscheduler': 'taskscheduler'},
     entry_points={
         'console_scripts': [
-            'labelImg=labelImg.labelImg:main'
+            'py-task-scheduler=taskscheduler.taskscheduler:main'
         ]
     },
     include_package_data=True,
     install_requires=requirements,
     license="MIT license",
     zip_safe=False,
-    keywords='labelImg',
+    keywords='taskscheduler',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
